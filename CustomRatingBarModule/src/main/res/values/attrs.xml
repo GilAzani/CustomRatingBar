@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomRatingBar">
+        <attr name="iconDrawable" format="reference" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="ratingCount" format="integer" />
+        <attr name="animationStyle" format="enum">
+            <enum name="none" value="0" />
+            <enum name="scale" value="1" />
+            <enum name="rotate" value="2" />
+        </attr>
+        <attr name="selectedColor" format="color"/>
+        <attr name="unselectedColor" format="color"/>
+    </declare-styleable>
+</resources>
