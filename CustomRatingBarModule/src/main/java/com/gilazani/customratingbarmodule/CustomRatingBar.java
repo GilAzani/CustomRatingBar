@@ -86,19 +86,15 @@ public class CustomRatingBar extends LinearLayout {
 
     private void setRating(int rating) {
         selectedRating = rating;
-        Log.d("CustomRatingBar", "Selected Rating: " + rating);
         for (int i = 0; i < ratingCount; i++) {
             ImageView icon = (ImageView) getChildAt(i);
             if (i < rating) {
-                Log.d("CustomRatingBar", "Selected i: " + i);
                 applyAnimation(icon);
                 // Apply the color filter
                 icon.setColorFilter(selectedColor, PorterDuff.Mode.SRC_IN);
             } else {
                 icon.setColorFilter(unselectedColor, PorterDuff.Mode.SRC_IN);
             }
-            // Log the current state of each icon
-            Log.d("CustomRatingBar", "Icon " + i + " selected: " + (i < rating));
         }
 
         if (onRatingChangeListener != null) {
