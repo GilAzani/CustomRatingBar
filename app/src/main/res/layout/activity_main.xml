@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:animationStyle="scale"
-        app:iconDrawable="@drawable/ic_launcher_foreground"
-        app:iconSize="40dp"
+        app:iconDrawable="@drawable/star"
+        app:iconSize="30dp"
         app:ratingCount="3"
         app:unselectedColor="@color/white"/>
 

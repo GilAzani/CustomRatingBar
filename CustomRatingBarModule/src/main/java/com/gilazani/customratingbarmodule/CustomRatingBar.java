@@ -111,7 +111,7 @@ public class CustomRatingBar extends LinearLayout {
                         Animation.RELATIVE_TO_SELF, 0.5f
                 );
                 scaleAnimation.setDuration(300);
-                scaleAnimation.setFillAfter(true);
+                scaleAnimation.setFillAfter(false);
                 icon.startAnimation(scaleAnimation);
                 break;
 
